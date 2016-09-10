@@ -12,6 +12,7 @@
 
 #ifndef FT_H
 # define FT_H
+typedef unsigned int	size_t;
 
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
@@ -23,7 +24,7 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-int	ft_strlen(char const *str);
+size_t	ft_strlen(char const *str);
 
 int	ft_isprint(int c);
 int	ft_isascii(int c);

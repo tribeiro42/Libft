@@ -1,5 +1,6 @@
+#include <ft.h>
 
-int	ft_strlen(char const *str)
+size_t	ft_strlen(char const *str)
 {
     int		size;
 
