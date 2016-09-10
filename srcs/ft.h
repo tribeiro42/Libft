@@ -12,7 +12,8 @@
 
 #ifndef FT_H
 # define FT_H
-typedef unsigned int	size_t;
+
+#include <string.h>
 
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
