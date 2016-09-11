@@ -36,5 +36,5 @@ int	ft_toupper(int c);
 int	ft_tolower(int c);
 
 int	ft_atoi(char *str);
-
+char	*ft_strstr(const char  *s, const char *to_find);
 #endif

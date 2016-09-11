@@ -46,7 +46,7 @@
 										- strlcat 		[   ]		[   ]
 										- strchr 		[   ]		[   ]
 										- strrchr		[   ]		[   ]
-										- strstr 		[   ]		[   ]
+										- strstr 		[ * ]		[ * ]
 										- strnstr 		[   ]		[   ]
 										- strcmp 		[ * ]		[   ]
 										- strncmp 		[ * ]		[   ]

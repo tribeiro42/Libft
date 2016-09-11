@@ -18,7 +18,7 @@ FLAG = -Wall -Werror -Wextra
 all : cc
 
 cc:
-	gcc $(FLAG) $(SRC) -I srcs -L. -lft
+	gcc $(FLAG) $(SRC) test/*.c -I srcs -I test -L. -lft
 
 .PHONY:
 	lib clean fclean fc re
