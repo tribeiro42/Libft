@@ -1,0 +1,11 @@
+#ifndef FUN_H
+# define FUN_H
+
+#include <stdio.h>
+#include <string.h>
+#include "../srcs/ft.h"
+
+void	funstrstr(char **argv);
+void	funatoi(char **argv);
+void	funstring(char **argv);
+#endif
