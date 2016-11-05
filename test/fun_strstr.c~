@@ -1,7 +1,0 @@
-#include "fun.h"
-
-void	funstrstr(char **argv)
-{
-    printf("StrStr  :%s\n", strstr(argv[1], argv[2]));
-    printf("FT_StrStr  :%s\n", ft_strstr(argv[1], argv[2]));
-}
