@@ -6,13 +6,15 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/10 11:40:44 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/04 19:51:04 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/05 20:01:44 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft.h"
+
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size	i;
+	size_t	i;
 
 	i = 0;
 	while(*s1 == *s2 && *s1 && *s2 && i <= n)

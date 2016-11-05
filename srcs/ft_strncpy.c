@@ -1,24 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/04 21:24:17 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/05 19:50:38 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/05 17:54:31 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/05 20:03:47 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* memmove example 
 #include <stdio.h>
 #include <string.h>
 
-int main ()
+char	*ft_strncpy(char * dst, const char * src, size_t len)
 {
-	char str[] = "memmove can be very useful......";
-	memmove (str+20,str+15,11);
-	puts (str);
-	return 0;
+	size_t	i;
+	char	*s;
+	char	*ptr;
+
+	s = (char *)src;
+	ptr = dst;
+	i = 0;
+	while(i <= len && *src)
+	{
+		ptr[i] = src[i];
+		i++;
+	}
+	return (dst);
 }
-*/

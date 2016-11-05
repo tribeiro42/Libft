@@ -6,11 +6,11 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 16:38:53 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/04 19:00:41 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/05 19:57:42 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "ft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -18,10 +18,7 @@ void	ft_bzero(void *s, size_t n)
 	size_t	i;
 
 	i = 0;
-	s1 = s;
-	if(n == 0)
-		return (s1);
+	s1 = (char*)s;
 	while(s1 && i <= n)
 		s1[i++] = '\0';
-	return (s1);
 }

@@ -6,19 +6,19 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/08/18 23:36:28 by fchanal           #+#    #+#              #
-#    Updated: 2016/08/25 10:43:22 by tribeiro         ###   ########.fr        #
+#    Updated: 2016/11/05 19:44:54 by tribeiro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = a.out
-SRC = main.c
+SRC = srcs/*.c
 OBJ = *.o
 FLAG = -Wall -Werror -Wextra
 
 all : cc
 
 cc:
-	gcc $(FLAG) $(SRC) test/*.c -I srcs -I test -L. -lft
+	gcc $(FLAG) $(SRC) -I srcs -L. -lft
 
 .PHONY:
 	lib clean fclean fc re
