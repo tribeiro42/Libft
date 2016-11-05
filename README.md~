@@ -33,7 +33,7 @@
 										- memset		[ * ]		[   ]
 										- bzero			[ * ]		[   ]
 										- memcpy 		[ * ]		[   ]
-										- memccpy 		[ * ]		[   ]
+										- memccpy 		[   ]		[   ]
 										- memmove 		[   ]		[   ]
 										- memchr 		[   ]		[   ]
 										- memcmp 		[   ]		[   ]

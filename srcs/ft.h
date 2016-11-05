@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/08/25 16:41:28 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/04 19:16:21 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 # define FT_H
 
 #include <string.h>
+
+void	*ft_memset(void *ptr, int value, size_t num);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*memccpy(void *dst, const void *src, int c, size_t n);
 
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);

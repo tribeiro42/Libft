@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_menccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/08/10 11:40:44 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/04 19:51:04 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/04 19:16:30 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/04 19:22:00 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+void	*memccpy(void *dst, const void *src, int c, size_t n)
 {
-	size	i;
+	char *dest;
+	char *sc;
+	size_t i;
 
+	sc = (char *)src;
 	i = 0;
-	while(*s1 == *s2 && *s1 && *s2 && i <= n)
+
+	while(i < n && sc[i] != c)
 	{
-		s1++;
-		s2++;
+		dest[i] = sc[i]
 		i++;
+		if(i == n)
+			return (NULL);
 	}
-	return (*s1 - *s2);
+	return (0);
 }

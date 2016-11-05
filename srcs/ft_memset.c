@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/08/10 11:40:44 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/04 19:51:04 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/04 14:49:48 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/04 16:36:15 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+/* SIZE T LIB */
+#include "ft.h"
+
+void	*ft_memset(void *ptr, int value, size_t num)
 {
-	size	i;
+	char	*s1;
+	size_t	i;
 
 	i = 0;
-	while(*s1 == *s2 && *s1 && *s2 && i <= n)
+	s1 = ptr;
+	while(s1 && i < num)
 	{
-		s1++;
-		s2++;
-		i++;
+		s1[i++] = value;
 	}
-	return (*s1 - *s2);
+	return (s1);
 }
