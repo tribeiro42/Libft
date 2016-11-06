@@ -24,8 +24,8 @@
 										/*  **************************************  */			
 ```
 
-											* Nombres de fonction :  18/52
-											* Fuction tester	    :  16/18
+											* Nombres de fonction :  47/52
+											* Fuction tester	    :  0/18
 
 ```
 												    	(   )		(   )
@@ -34,18 +34,18 @@
 										- bzero			[ * ]		[   ]
 										- memcpy 		[ * ]		[   ]
 										- memccpy 		[ * ]		[   ]
-										- memmove 		[   ]		[   ]
-										- memchr 		[   ]		[   ]
-										- memcmp 		[   ]		[   ]
+										- memmove 		[ * ]		[   ]
+										- memchr 		[ * ]		[   ]
+										- memcmp 		[ * ]		[   ]
 										- strlen 		[ * ]		[ * ]
 										- strdup 		[ * ]		[   ]
 										- strcpy 		[ * ]		[   ]
 										- strncpy 		[ * ]		[   ]
 										- strcat 		[ * ]		[   ]
 										- strncat 		[ * ]		[   ]
-										- strlcat 		[   ]		[   ]
-										- strchr 		[   ]		[   ]
-										- strrchr		[   ]		[   ]
+										- strlcat 		[ * ]		[   ]
+										- strchr 		[ * ]		[   ]
+										- strrchr		[ * ]		[   ]
 										- strstr 		[ * ]		[   ]
 										- strnstr 		[   ]		[   ]
 										- strcmp 		[ * ]		[   ]

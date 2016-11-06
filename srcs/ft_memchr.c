@@ -6,10 +6,10 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 15:43:05 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/05 20:02:45 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/06 16:50:28 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
+
 #include <stdio.h>
 #include <string.h>
 
@@ -23,23 +23,21 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while(i <= n)
 	{
 		if(str[i] == c)
-			return (i);
+			return (&str[i]);
 		i++;
 	}
 	return (NULL);
 }
-*/
 /*
 int main ()
 {
 	char * pch;
 	char str[] = "Example string";
-	pch = (char*) memchr (str, 'p', strlen(str));
+	pch = (char*) ft_memchr (str, 'p', strlen(str));
 	if (pch!=NULL)
-		printf ("'p' found at position %d.\n", pch-str+1);
+		printf ("'p' found at position %ld.\n", pch-str+1);
 	else
 		printf ("'p' not found.\n");
 	return 0;
 }
-
 */

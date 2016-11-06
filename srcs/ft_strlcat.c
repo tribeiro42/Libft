@@ -1,38 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/04 14:09:30 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/06 16:29:07 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/06 18:59:09 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/06 20:54:32 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
-
-char	*ft_strstr(const char *s, const char *to_find)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-    char *cp;
-    char *s1;
-    char *s2;
+	char	*d;
+	char	*s;
+	size_t	n;
+	size_t	dlen;
 
-    cp = (char *) s;
-    if(!*to_find)
-		return (char *) s;
-    while(*cp)
-    {
-        s1 = cp;
-		s2 = (char *) to_find;
-		while(*s1 && *s2 && !(*s1 - *s2))
+	d = (char*) dst;
+	s = (char*) src;
+	n = size;
+	while(*d && n != 0)
+		d++;
+	dlen = *d - *dst
+	n = size - dlen;
+	if(n == 0)
+		return (dlen + ft_strlen(s));
+	while(*s)
+	{
+		if(n != 1)
 		{
-			s1++;
-			s2++;
+			*d = *s;
+			d++;
+			n--;
 		}
-		if(!*s2)
-			return (cp) ;
-		cp++;
-    }
-    return (NULL);
+		s++;
+	}
+	*d = 0;
+	return (*dlen + *src)
 }

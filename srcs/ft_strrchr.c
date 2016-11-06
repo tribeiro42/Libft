@@ -1,38 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/04 14:09:30 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/06 16:29:07 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/06 21:09:02 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/06 21:19:24 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
-
-char	*ft_strstr(const char *s, const char *to_find)
+char	*ft_strrchr(const char *s, int c)
 {
-    char *cp;
-    char *s1;
-    char *s2;
+    char    *s1;
+	int		ctp;
 
-    cp = (char *) s;
-    if(!*to_find)
-		return (char *) s;
-    while(*cp)
+    s1 = (char*) s;
+	ctp = 0;
+	while (s1[ctp])
+		ctp++;
+	ctp--;
+	while (ctp >= 0)
     {
-        s1 = cp;
-		s2 = (char *) to_find;
-		while(*s1 && *s2 && !(*s1 - *s2))
-		{
-			s1++;
-			s2++;
-		}
-		if(!*s2)
-			return (cp) ;
-		cp++;
+        if(s1[ctp] == c)
+            return (s1);
+        ctp--;
     }
-    return (NULL);
+    return (0);
 }

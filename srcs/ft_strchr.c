@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/04 21:24:17 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/06 19:25:08 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/06 20:55:52 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/06 21:03:24 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
- 
-#include <stdio.h>
-#include <string.h>
+
 #include "ft.h"
 
- void	*ft_memmove(void *dst, const void *src, size_t len)
+char	*ft_strchr(const char *s, int c)
 {
-	char	tmp[len];
-	
-	ft_memcpy(tmp, src, len);
-	ft_memcpy(dst, tmp, len);
-	return (dst);
-}
+	char	*s1;
 
-int main ()
-{
-	char str[] = "memmove can be very useful......";
-	char s1[] = "memmove can be very useful......";
-	puts (str);
-	memmove (str+20,str+15,11);
-	ft_memmove (s1+20,s1+15,11);
-	puts (str);
-	puts (s1);
-	return 0;
+	s1 = (char*) s;
+	while(*s1)
+	{
+		if(*s1 == c)
+			return (s1);
+		s1++;
+	}
+	return (0);
 }

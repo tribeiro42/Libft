@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 19:16:30 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/04 19:33:38 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/06 20:40:55 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
+
 char* msg = "This is the string: not copied";
 
 int main( void )
@@ -42,10 +42,10 @@ int main( void )
     char buffer[80];
 
     memset( buffer, '\0', 80 );
+	puts(msg);
     ft_memccpy( buffer, msg, ':', 80 );
-	
-    printf( "%s\n", buffer );
+    puts(buffer);
     
     return 0;
 }
-*/
+
