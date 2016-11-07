@@ -30,7 +30,7 @@
 ```
 												    	(   )		(   )
 
-										- memset		[ * ]		[   ]
+										- memset		[ * ]		[ * ]
 										- bzero			[ * ]		[   ]
 										- memcpy 		[ * ]		[   ]
 										- memccpy 		[ * ]		[   ]
@@ -38,8 +38,8 @@
 										- memchr 		[ * ]		[   ]
 										- memcmp 		[ * ]		[   ]
 										- strlen 		[ * ]		[ * ]
-										- strdup 		[ * ]		[   ]
-										- strcpy 		[ * ]		[   ]
+										- strdup 		[ * ]		[ * ]
+										- strcpy 		[ * ]		[ * ]
 										- strncpy 		[ * ]		[   ]
 										- strcat 		[ * ]		[   ]
 										- strncat 		[ * ]		[   ]
