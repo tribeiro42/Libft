@@ -6,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/08/18 23:36:28 by fchanal           #+#    #+#              #
-#    Updated: 2016/11/07 16:38:09 by tribeiro         ###   ########.fr        #
+#    Updated: 2016/11/07 18:06:20 by tribeiro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,12 +18,15 @@ FLAG = -Wall -Werror -Wextra
 all : cc
 
 cc:
-	gcc -c srcs/*.c $(FLAG)
-	ar rc libft.a *.o
+	gcc -c $(SRC) $(FLAG)
+	ar rc libft.a $(OBJ)
 	ranlib libft.a
 
 .PHONY:
 	com clean fclean fc re
+
+lib:
+	gcc -shared -fPIC $(FLAG) -I./$(SRC) $(SRC) -o libft.so
 
 com:
 	gcc $(FLAG) $(SRC) -I srcs -L. -lft
@@ -32,7 +35,6 @@ clean:
 	@rm -f $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
 	rm libft.a
 
 fc:
@@ -40,4 +42,4 @@ fc:
 	rm srcs/*.h~
 	rm Makefile~
 
-re: fclean lib cc
+re: fclean cc
