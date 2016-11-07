@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 14:09:30 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/06 16:28:03 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/07 16:34:53 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strnstr(const char *s, const char *to_find, size_t len)
         s1 = cp;
 		s2 = (char *) to_find;
 		i = 0;
-		while((*s1 && *s2 && !(*s1 - *s2)) || i++ == len)
+		while((*s1 && *s2 && !(*s1 - *s2)) || i++ <= len)
 		{
 			s1++;
 			s2++;
@@ -39,7 +39,7 @@ char	*ft_strnstr(const char *s, const char *to_find, size_t len)
     }
     return (NULL);
 }
-
+/*
 
 int		main(int argc, char **argv)
 {
@@ -49,3 +49,4 @@ int		main(int argc, char **argv)
 	
 	return (0);
 }
+*/
