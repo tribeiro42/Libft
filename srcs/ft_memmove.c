@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 21:24:17 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/06 19:25:08 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/07 21:04:40 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
  
@@ -16,13 +16,27 @@
 
  void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	tmp[len];
-	
-	ft_memcpy(tmp, src, len);
-	ft_memcpy(dst, tmp, len);
-	return (dst);
-}
+	char	*d;
+	char	*s;
 
+	d = (char*) dst;
+	s = (char*) src;
+	if(*d < *s)
+	{
+		d += len - 1;
+		s += len - 1;
+		while(len-- > 0)
+		{
+			*d = *s;
+			d--;
+			s--;
+		}
+	}
+	else
+		ft_memcpy(dst, src, len);
+	return (d);
+}
+/*
 int main ()
 {
 	char str[] = "memmove can be very useful......";
@@ -34,3 +48,4 @@ int main ()
 	puts (s1);
 	return 0;
 }
+*/

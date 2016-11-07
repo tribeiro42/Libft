@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 19:01:10 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/04 19:14:32 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/07 19:45:55 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*dest;
 	size_t	i;
 
-	dest = dst;
+	dest = (char*)dst;
 	cp = (char*)src;
 	i = 0;
 	while(i < n)
@@ -27,8 +27,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		dest[i] = cp[i];
 		i++;
 	}
-	dest[i] = '\0';
-	return (0);
+	return (dst);
 }
 /*
 int		main (void)
@@ -40,9 +39,10 @@ int		main (void)
 	printf("Before memcpy dest = %s\n", dest);
 	memcpy(dest, src, strlen(src)+1);
 	ft_memcpy(dest2, src, strlen(src) + 1);
-	printf("After memcpy dest = %s\n", dest);
+	printf("After memcpy dest     = %s\n", dest);
 	printf("After ft_memcpy dest2 = %s\n", dest2);
    
 	return(0);
 }
+
 */

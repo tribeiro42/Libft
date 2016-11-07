@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 15:43:05 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/06 16:50:28 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/07 21:10:50 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,14 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
 	char	*str;
 
-	i = 0;
 	str = (char *)s;
-	while(i <= n)
+	while(0 < n--)
 	{
-		if(str[i] == c)
-			return (&str[i]);
-		i++;
+		if(*str == c)
+			return (str);
+		str++;
 	}
 	return (NULL);
 }

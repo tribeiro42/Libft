@@ -6,25 +6,29 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 17:54:31 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/05 20:03:47 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/07 23:06:37 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "ft.h"
 
 char	*ft_strncpy(char * dst, const char * src, size_t len)
 {
-	size_t	i;
 	char	*s;
-	char	*ptr;
+	char	*d;
+	size_t	l;
+	size_t	i;
 
 	s = (char *)src;
-	ptr = dst;
+	d = dst;
+	l = ft_strlen(src);
 	i = 0;
-	while(i <= len && *src)
+	while(i < len)
 	{
-		ptr[i] = src[i];
+		if(i > l)
+			d[i] = '\0';
+		else
+			d[i] = s[i];
 		i++;
 	}
 	return (dst);

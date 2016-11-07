@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 19:31:10 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/05 19:54:22 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/07 23:20:16 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,22 @@
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	ft_strncpy(s1, s2, n);
-	return (s1);
+    char    *ptr;
+    size_t     i;
+
+    i = 0;
+    ptr = (char*)s2;
+    while(s1[i])
+        i++;
+    while(n-- > 0)
+    {
+        s1[i] = *ptr;
+		ptr++;
+        i++;
+    }
+	if(n == 0)
+		s1[i] = '\0';
+    return (s1);
 }
 /*
 int main ()
