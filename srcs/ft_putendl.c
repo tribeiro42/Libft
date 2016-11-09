@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 13:55:12 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/04 13:55:38 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/09 06:52:56 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 void	ft_putendl(char const *s)
 {
-    write(1, s, ft_strlen(s));
-    write(1, "\n", 1);
+	if(s)
+	{
+		write(1, s, ft_strlen(s));
+		write(1, "\n", 1);
+	}
 }

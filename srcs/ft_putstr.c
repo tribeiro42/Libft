@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/04 21:49:50 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/08/06 09:19:31 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/09 06:52:35 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,6 @@
 
 void	ft_putstr(char const *s)
 {
-	write(1, s, ft_strlen(s));
+	if(s)
+		write(1, s, ft_strlen(s));
 }

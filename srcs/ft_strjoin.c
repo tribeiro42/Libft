@@ -6,12 +6,12 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 05:35:00 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/09 06:19:07 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/09 06:28:22 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft.h"
-
+/*
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	len;
@@ -38,3 +38,4 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		*d++ = *s1++;
 	return (dest);
 }
+*/
