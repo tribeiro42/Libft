@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 20:55:52 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/06 21:03:24 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/08 23:04:09 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ char	*ft_strchr(const char *s, int c)
 			return (s1);
 		s1++;
 	}
+	if(c == '\0')
+		return (s1);
 	return (0);
 }

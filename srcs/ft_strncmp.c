@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/10 11:40:44 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/05 20:01:44 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/08 23:12:09 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 		s2++;
 		i++;
 	}
-	return (*s1 - *s2);
+	return (*(unsigned char*)s1 - *(unsigned char*)s2);
 }

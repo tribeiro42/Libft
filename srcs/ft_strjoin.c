@@ -1,39 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/06 18:59:09 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/08 22:50:36 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/09 05:35:00 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/09 06:19:07 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
+	size_t	len;
+	char	*dest;
 	char	*d;
-	char	*s;
-	size_t	n;
-	size_t	dlen;
+	int		i;
+	int		y;
 
-	d = (char*) dst;
-	s = (char*) src;
-	dlen = ft_strlen(dst);
-		n = size - dlen;
-	while(*d)
-		d++;
-	while(*s)
+	i = 0;
+	y = 0;
+	len = ft_strlen(s1) + ft_strlen(s2);
+	dest = ft_strnew(len);
+	d = dest;
+	while(s1[i])
+		i++;
+	while(s2[y])
 	{
-		if(n-- != 0)
-		{
-			*d = *s;
-			d++;
-		}
-		s++;
+		s1[i] = s2[y];
+		i++;
+		y++;
 	}
-	*d = '\0';
-	return (dlen + (s - src));
+	s1[i] = '\0';
+	while(s1)
+		*d++ = *s1++;
+	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/06 09:08:57 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/08/06 09:59:27 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/08 23:17:53 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_atoi(char *str)
 	n = 0;
 	i = 0;
 	result = 0;
-	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\r' || str[i] == '\f')
+	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\r' || str[i] == '\f' || str[i] == '\t'  || str[i] == '\v')
 		i++;
 	if (str[i] == '-')
 		n = 1;

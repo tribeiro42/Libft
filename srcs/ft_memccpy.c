@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 19:16:30 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/07 20:49:04 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/08 23:16:07 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	
 	d = (unsigned char*)dst;
 	s = (unsigned char *)src;
-	while(0 < n--)
+	while(n--)
 	{
 		*d = *s;
 		d++;

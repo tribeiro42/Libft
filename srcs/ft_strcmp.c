@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/10 11:40:44 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/07 19:53:36 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/08 23:11:06 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_strcmp(char *s1, char *s2)
 		s1++;
 		s2++;
 	}
-	return (*s1 - *s2);
+	return (*(unsigned char*)s1 - *(unsigned char*)s2);
 }
 
 /*

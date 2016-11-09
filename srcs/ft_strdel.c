@@ -1,39 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/06 18:59:09 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/08 22:50:36 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/09 00:35:40 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/09 00:38:17 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+void	ft_strdel(char **as)
 {
-	char	*d;
-	char	*s;
-	size_t	n;
-	size_t	dlen;
-
-	d = (char*) dst;
-	s = (char*) src;
-	dlen = ft_strlen(dst);
-		n = size - dlen;
-	while(*d)
-		d++;
-	while(*s)
+	if(*as && as)
 	{
-		if(n-- != 0)
-		{
-			*d = *s;
-			d++;
-		}
-		s++;
+		free(*as);
+		*as = NULL;
 	}
-	*d = '\0';
-	return (dlen + (s - src));
 }
