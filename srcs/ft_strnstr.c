@@ -14,28 +14,24 @@
 
 char	*ft_strnstr(const char *s, const char *to_find, size_t len)
 {
-    char	*cp;
-    char	*s1;
-    char	*s2;
+    size_t	y;
 	size_t	i;
 
 	i = 0;
-    cp = (char *) s;
+	y = 0;
     if(!*to_find)
 		return ((char *) s);
-    while(*cp)
+    while(i < len && s[i])
     {
-        s1 = cp;
-		s2 = (char *) to_find;
-		i = 0;
-		while(( (*s1 && *s2 && !(*s1 - *s2)) ) && i++ < len)
+		while(s[i + y]== to_find[y] && (i <= len))
 		{
-			s1++;
-			s2++;
+			if(ft_strlen(to_find) + i > len)
+				return (NULL);
+			if(to_find[y + 1] == '\0' && (i <= len))
+				return ((char*)s + i);
+			y++;
 		}
-		if(!*s2)
-			return (cp);
-		cp++;
+		i++;
     }
     return (NULL);
 }
@@ -46,7 +42,7 @@ int		main(int argc, char **argv)
 	(void)argc;
 	printf("STRNSTR    :%s\n", strnstr(argv[1], argv[2], atoi(argv[3])));
 	printf("FT_STRNSTR :%s\n", ft_strnstr(argv[1], argv[2], atoi(argv[3])));
-	
+
 	return (0);
 }
 */

@@ -11,31 +11,29 @@
 /* ************************************************************************** */
 
 #include "ft.h"
-/*
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
+	char	*dst;
 	size_t	len;
-	char	*dest;
-	char	*d;
 	int		i;
 	int		y;
 
 	i = 0;
 	y = 0;
 	len = ft_strlen(s1) + ft_strlen(s2);
-	dest = ft_strnew(len);
-	d = dest;
+	if(!(dst = malloc(sizeof(char) * len + 1)))
+		return (NULL);
 	while(s1[i])
+	{
+		dst[i] = s1[i];
 		i++;
+	}
 	while(s2[y])
 	{
-		s1[i] = s2[y];
-		i++;
+		dst[i + y] = s2[y];
 		y++;
 	}
-	s1[i] = '\0';
-	while(s1)
-		*d++ = *s1++;
-	return (dest);
+	dst[i + y] = '\0';
+	return (dst);
 }
-*/
