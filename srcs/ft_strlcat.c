@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 18:59:09 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 00:41:43 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 21:03:28 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		n = size - dlen;
 
 		if (n == 0)
-			return(dlen + strlen(s));
+			return(dlen + ft_strlen(s));
 		while (*s != '\0') 
 		{
 			if (n != 1)

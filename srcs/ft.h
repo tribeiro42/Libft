@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 05:36:05 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 20:57:52 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
-
-/*         WARNNING BALETRINGUE TU PUSH SA SUCIDE TOI */
-#include <stdio.h>
 
 typedef struct	s_list
 {
