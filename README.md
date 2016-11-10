@@ -82,7 +82,7 @@
 										- strsub 		[ * ]		[ * ]
 										- strjoin 		[ * ]		[ * ]
 										- strtrim 		[ * ]		[ * ]
-										- strsplit 		[   ]		[   ]
+										- strsplit 		[ * ]		[ * ]
 										- itoa 			[   ]		[   ]
 										- ft_putchar 	[ * ]		[ * ]
 										- ft_putstr 	[ * ]		[ * ]
