@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/10 05:42:36 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 05:43:30 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/10 03:54:10 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/10 06:00:40 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
-
-size_t	ft_strlen(char const *str)
+/*
+char	**ft_strsplit(char const *s, char c)
 {
-	int		size;
-
-	size = 0;
-	while (str[size])
-		size++;
-	return (size);
+	int		i;
+	while(s[i])
+	{
+		
+	}
 }
+*/

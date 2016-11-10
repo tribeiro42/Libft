@@ -6,15 +6,15 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 13:51:51 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/04 13:52:52 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 04:53:58 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_isalpha(int c)
+int		ft_isalpha(int c)
 {
-    if(c >= 'A' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		return (1);
-    if(c >= 'a' && c <= 'z')
+	if (c >= 'a' && c <= 'z')
 		return (1);
-    return (0);
+	return (0);
 }

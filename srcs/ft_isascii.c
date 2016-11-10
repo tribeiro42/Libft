@@ -6,13 +6,13 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 13:53:11 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/04 13:53:42 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 04:54:40 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_isascii(int c)
+int		ft_isascii(int c)
 {
-    if(c >= 0 && c <= 127)
+	if (c >= 0 && c <= 127)
 		return (1);
-    return (0);
+	return (0);
 }

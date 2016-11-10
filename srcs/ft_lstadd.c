@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/10 05:42:36 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 05:43:30 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/10 04:22:34 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/10 04:38:20 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft.h"
-
-size_t	ft_strlen(char const *str)
+/*
+void	ft_lstadd(t_list **alst, t_list *new)
 {
-	int		size;
-
-	size = 0;
-	while (str[size])
-		size++;
-	return (size);
+	
 }
+*/

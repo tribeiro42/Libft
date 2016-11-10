@@ -6,11 +6,10 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 14:49:48 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/07 18:43:10 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 05:03:46 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* SIZE T LIB */
 #include "ft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
@@ -19,8 +18,8 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t	i;
 
 	i = 0;
-	s1 = (char*)b;
-	while(i < len)
+	s1 = (char *)b;
+	while (i < len)
 		s1[i++] = c;
 	return (b);
 }

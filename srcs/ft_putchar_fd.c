@@ -6,14 +6,14 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 16:47:27 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/09 07:00:04 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 05:04:58 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if(fd > 0)
+	if (fd > 0)
 		write(fd, &c, 1);
 }

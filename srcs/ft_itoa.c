@@ -1,32 +1,56 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/05 16:19:47 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 05:14:37 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/10 00:02:43 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/10 01:53:37 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft.h"
 
-char	*ft_strdup(const char *s1)
+void	ft_intlen(int n, int* len, size_t* weight)
 {
-	char	*str;
-	int		len;
-	int		i;
-
-	i = 0;
-	len = ft_strlen(s1);
-	if (!(str = malloc(sizeof(str) * (len + 1))))
-		return (NULL);
-	while (s1[i])
+	*weight = 1;
+	*len = 1;
+	if(n >= 0)
 	{
-		str[i] = s1[i];
-		i++;
+		*weight = 0;
+		n = -n;
 	}
-	str[i] = '\0';
+	while(n / *weight < 9)
+	{
+		*len *= 10;
+			weight++;
+	}
+}
+
+char	*ft_itoa(int n)
+{
+	int		len;
+	size_t	weight;
+	int		ctp;
+	char	*str;
+
+	ctp = 0;
+	ft_intlen(n, &len, &weight);
+	if(!(str = malloc(sizeof(char*) * weight + 1)))
+		return (NULL);
+	if(n < 0)
+	{
+		str[ctp] = '-';
+		ctp++;
+	}
+	if(len >= 1)
+	{
+		str[ctp] = (n / 10 % len) + 48;
+		len /= 10;
+		ctp++;
+	}
+	str[ctp] = '\0';
 	return (str);
 }
+

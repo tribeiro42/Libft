@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 01:51:19 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/09 06:48:59 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 05:45:12 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		i;
 
 	i = 0;
-	if(s)
+	if (s)
 	{
-		cp = (char*) s;
-		if(!(dst = (char*)malloc(sizeof(char) * ft_strlen(s) + 1)))
+		cp = (char *)s;
+		if (!(dst = (char *)malloc(sizeof(char) * ft_strlen(s) + 1)))
 			return (NULL);
-		while(cp[i])
+		while (cp[i])
 		{
 			dst[i] = f(i, cp[i]);
 			i++;

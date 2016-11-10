@@ -6,13 +6,13 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/04 21:49:50 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/09 07:00:38 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 05:04:29 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft.h"
 
 void	ft_putchar(char c)
 {
-		write(1, &c, 1);
+	write(1, &c, 1);
 }

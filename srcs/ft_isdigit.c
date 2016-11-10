@@ -6,13 +6,13 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 13:54:01 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/04 13:54:06 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 04:55:07 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+int		ft_isdigit(int c)
 {
-    if(c >= '0' && c <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
-    return (0);
+	return (0);
 }

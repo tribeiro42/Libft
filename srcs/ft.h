@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/09 06:21:16 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 05:36:05 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,17 @@
 
 #include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 /*         WARNNING BALETRINGUE TU PUSH SA SUCIDE TOI */
 #include <stdio.h>
+
+typedef struct	s_list
+{
+	void	*content;
+	size_t	content_size;
+	struct s_list *next;
+} t_list;
 
 void	*ft_memset(void *ptr, int value, size_t num);
 void	ft_bzero(void *s, size_t n);
@@ -87,5 +95,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
+void	ft_lstadd(t_list **alst, t_list *new);
 
 #endif

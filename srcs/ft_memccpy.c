@@ -6,43 +6,26 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 19:16:30 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/08 23:16:07 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/10 04:57:28 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "ft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	unsigned char	*d;
 	unsigned char	*s;
-	
+
 	d = (unsigned char*)dst;
 	s = (unsigned char *)src;
-	while(n--)
+	while (n--)
 	{
 		*d = *s;
 		d++;
-		if(*s == (c & 255))
+		if (*s == (c & 255))
 			return (d);
 		s++;
 	}
 	return (NULL);
 }
-/*
-char* msg = "This is the string: not copied";
-
-int main( void )
-{
-    char buffer[80];
-
-    memset( buffer, '\0', 80 );
-	puts(msg);
-	ft_memccpy( buffer, msg, ':', 80 );
-    puts(buffer);
-    
-    return 0;
-}
-*/
