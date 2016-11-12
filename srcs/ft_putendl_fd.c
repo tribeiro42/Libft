@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/04 13:55:55 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 05:05:55 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/12 22:19:08 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/11/12 22:19:11 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "ft.h"
+#include "libft.h"
 
 void	ft_putendl_fd(char const *s, int fd)
 {

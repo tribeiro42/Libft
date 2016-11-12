@@ -6,12 +6,11 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 13:55:12 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 05:05:34 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/12 22:18:40 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "ft.h"
+#include "libft.h"
 
 void	ft_putendl(char const *s)
 {

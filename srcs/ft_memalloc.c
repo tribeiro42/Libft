@@ -6,11 +6,11 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 00:04:29 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 04:56:20 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/12 22:05:34 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void	*ft_memalloc(size_t size)
 {

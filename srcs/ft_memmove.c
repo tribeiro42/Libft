@@ -6,11 +6,11 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 21:24:17 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 05:02:52 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/12 22:07:50 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

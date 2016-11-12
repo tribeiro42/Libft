@@ -6,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/08/18 23:36:28 by fchanal           #+#    #+#              #
-#    Updated: 2016/11/07 18:06:20 by tribeiro         ###   ########.fr        #
+#    Updated: 2016/11/12 22:52:23 by tribeiro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ clean:
 	@rm -f $(OBJ)
 
 fclean: clean
-	rm libft.a
+	rm -f libft.a
 
 fc:
 	rm srcs/*.c~

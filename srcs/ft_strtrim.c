@@ -6,36 +6,36 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 22:16:29 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 05:57:23 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/12 23:38:42 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
-int		ft_isdel(char c)
+static int		ft_isdel(char c)
 {
-	if (c == ' ' || c == '\t' || c == '\n')
+	if (c == ' ' || c == '\t' || c == '\n' || c == '\0')
 		return (1);
 	return (0);
 }
-
 char	*ft_strtrim(char const *s)
 {
-	char	*dst;
+	char	*d;
 	int		i;
-
-	if (s)
+	int		y;
+	if(!s)
+		return (NULL);
+	i = 0;
+	y = 0;
+	while(ft_isdel(s[i]))
+		i++;
+	while(s[i] && !(ft_isdel(s[i])))
 	{
-		i = 0;
-		while (ft_isdel(s[i]))
-			s++;
-		while (s[i])
-			i++;
-		while (i-- > 0 && ft_isdel(s[i]))
-			(void)s;
-		dst = ft_strsub(s, 0, i + 1);
-		if (dst)
-			return (dst);
+		i++;
+		y++;
 	}
-	return (ft_strdup(s));
+	if(!(d = (char*)malloc(sizeof(char) * y + 1)))
+	   return (NULL);
+	ft_strncpy(d, &s[i], y);
+	return (d);
 }

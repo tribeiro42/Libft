@@ -6,11 +6,11 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 21:09:02 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 05:53:49 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/12 22:15:47 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

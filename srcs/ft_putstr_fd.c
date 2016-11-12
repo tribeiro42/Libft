@@ -6,11 +6,11 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 05:09:28 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 05:09:34 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/12 22:10:27 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void	ft_putstr_fd(char const *s, int fd)
 {

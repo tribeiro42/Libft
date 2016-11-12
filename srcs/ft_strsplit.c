@@ -6,13 +6,13 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 03:54:10 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 20:37:11 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/12 22:16:30 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
-int		str_nbr_word(char *str, char c)
+static int		str_nbr_word(char *str, char c)
 {
 	int		nbr_word;
 	int		i;
@@ -30,7 +30,7 @@ int		str_nbr_word(char *str, char c)
 	return (nbr_word);
 }
 
-char	*ft_sncpy(char *dest, char *src, unsigned int n)
+static char		*ft_sncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int	lenght;
 	char			*d;
@@ -50,7 +50,7 @@ char	*ft_sncpy(char *dest, char *src, unsigned int n)
 	return (d);
 }
 
-int		str_len(char *str, char c)
+static int		str_len(char *str, char c)
 {
 	int		i;
 	int		size;
@@ -68,17 +68,18 @@ int		str_len(char *str, char c)
 char	**ft_strsplit(char const *s, char c)
 {
 	char	**dest;
-	int		word;
 	int		len;
 	int		i;
 	int		i2;
 
 	i = 0;
 	i2 = 0;
-	word = str_nbr_word((char*)s, c);
-	if (!(dest = (char **)malloc(sizeof(char*) * word + 1)))
+	if (s == 0)
 		return (NULL);
-	while (i2 < word)
+	if (!(dest = (char **)malloc(sizeof(char*) *
+str_nbr_word((char*)s, c) + 1)))
+		return (NULL);
+	while (i2 < str_nbr_word((char*)s, c))
 	{
 		while (s[i] == c)
 			i++;

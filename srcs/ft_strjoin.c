@@ -6,11 +6,11 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 05:35:00 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 18:14:11 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/12 22:13:39 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
