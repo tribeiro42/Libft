@@ -81,7 +81,7 @@
 										- strnequ 		[ * ]		[ * ]
 										- strsub 		[ * ]		[ * ]
 										- strjoin 		[ * ]		[ * ]
-										- strtrim 		[ * ]		[   ]
+										- strtrim 		[ * ]		[ * ]
 										- strsplit 		[ * ]		[ * ]
 										- itoa 			[ * ]		[ * ]
 										- ft_putchar 	[ * ]		[ * ]

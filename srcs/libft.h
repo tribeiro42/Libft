@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/10 20:57:52 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/13 19:52:57 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,27 +24,27 @@ typedef struct	s_list
 	struct s_list *next;
 } t_list;
 
-void	*ft_memset(void *ptr, int value, size_t num);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
-void	*ft_memchr(const void *s, int c, size_t n);
-int		ft_memcmp(const void *s1, const void *s2, size_t n);
+void			*ft_memset(void *ptr, int value, size_t num);
+void			ft_bzero(void *s, size_t n);
+void			*ft_memcpy(void *dst, const void *src, size_t n);
+void			*ft_memccpy(void *dst, const void *src, int c, size_t n);
+void			*ft_memchr(const void *s, int c, size_t n);
+int				ft_memcmp(const void *s1, const void *s2, size_t n);
 
-void	*ft_memchr(const void *s, int c, size_t n);
+void			*ft_memchr(const void *s, int c, size_t n);
 
-void	ft_putchar(char c);
-void	ft_putstr(char const *s);
-void	ft_putendl(char const *s);
-void	ft_putnbr(int n);
+void			ft_putchar(char c);
+void			ft_putstr(char const *s);
+void			ft_putendl(char const *s);
+void			ft_putnbr(int n);
 
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char const *s, int fd);
-void	ft_putendl_fd(char const *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+void			ft_putchar_fd(char c, int fd);
+void			ft_putstr_fd(char const *s, int fd);
+void			ft_putendl_fd(char const *s, int fd);
+void			ft_putnbr_fd(int n, int fd);
 
-size_t	ft_strlen(char const *str);
-char	*ft_strdup(const char *s1);
+size_t			ft_strlen(char const *str);
+char			*ft_strdup(const char *s1);
 char	*ft_strstr(const char  *s, const char *to_find);
 char	*ft_strnstr(const char  *s, const char *to_find, size_t n);
 char	*ft_strcpy(char *dst, const char *src);
@@ -57,15 +57,15 @@ char	*ft_strrchr(const char *s, int c);
 int     ft_strcmp(char *s1, char *s2);
 int     ft_strncmp(const char *s1, const char *s2, size_t n);
 
-int	ft_isprint(int c);
-int	ft_isascii(int c);
-int	ft_isalnum(int c);
-int	ft_isdigit(int c);
-int	ft_isalpha(int c);
-int	ft_toupper(int c);
-int	ft_tolower(int c);
+int		ft_isprint(int c);
+int		ft_isascii(int c);
+int		ft_isalnum(int c);
+int		ft_isdigit(int c);
+int		ft_isalpha(int c);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 
-int	ft_atoi(char *str);
+int		ft_atoi(char *str);
 
 
 void	*ft_memalloc(size_t size);

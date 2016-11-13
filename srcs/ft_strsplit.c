@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 03:54:10 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/12 22:16:30 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/13 19:50:47 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ static int		str_len(char *str, char c)
 	return (size);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	char	**dest;
 	int		len;

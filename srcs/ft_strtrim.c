@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 22:16:29 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/12 23:38:42 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/13 19:50:00 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,24 +18,29 @@ static int		ft_isdel(char c)
 		return (1);
 	return (0);
 }
-char	*ft_strtrim(char const *s)
+
+char			*ft_strtrim(char const *s)
 {
 	char	*d;
 	int		i;
 	int		y;
-	if(!s)
-		return (NULL);
+	int		z;
+
 	i = 0;
-	y = 0;
-	while(ft_isdel(s[i]))
+	z = 0;
+	if (!s)
+		return (NULL);
+	while (ft_isdel(s[i]))
 		i++;
-	while(s[i] && !(ft_isdel(s[i])))
-	{
-		i++;
-		y++;
-	}
-	if(!(d = (char*)malloc(sizeof(char) * y + 1)))
-	   return (NULL);
-	ft_strncpy(d, &s[i], y);
+	y = ft_strlen(s);
+	if (i > y)
+		return (d = malloc(sizeof(char)));
+	while (ft_isdel(s[y]))
+		y--;
+	if (!(d = (char*)malloc(sizeof(char) * (y - i) + 2)))
+		return (NULL);
+	while (i <= y)
+		d[z++] = s[i++];
+	d[z] = '\0';
 	return (d);
 }

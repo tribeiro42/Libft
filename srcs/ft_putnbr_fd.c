@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 14:08:05 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/12 22:56:10 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/13 19:41:38 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putnbr_fd(int n, int fd)
 	nb = n;
 	if (n < 0)
 	{
-		write(fd , "-", 1);
+		write(fd, "-", 1);
 		nb = -nb;
 	}
 	if (nb > 9)
