@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/14 19:22:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/14 19:48:32 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/14 20:47:12 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 
 	tmp = NULL;
 	new = NULL;
-	if(!lst)
+	if (!lst)
 		return (NULL);
 	tmp = f(lst);
 	new = tmp;
-	while(lst)
+	while (lst)
 	{
 		lst = lst->next;
 		tmp->next = f(lst);
