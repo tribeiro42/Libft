@@ -6,21 +6,21 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/08/18 23:36:28 by fchanal           #+#    #+#              #
-#    Updated: 2016/11/12 22:52:23 by tribeiro         ###   ########.fr        #
+#    Updated: 2016/11/13 20:02:09 by tribeiro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = a.out
+NAME = libft.a
 SRC = srcs/*.c
 OBJ = *.o
 FLAG = -Wall -Werror -Wextra
 
-all : cc
+all : $(NAME) cc
 
 cc:
 	gcc -c $(SRC) $(FLAG)
-	ar rc libft.a $(OBJ)
-	ranlib libft.a
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 .PHONY:
 	com clean fclean fc re
