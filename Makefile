@@ -6,12 +6,15 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/08/18 23:36:28 by fchanal           #+#    #+#              #
-#    Updated: 2016/11/15 17:20:35 by tribeiro         ###   ########.fr        #
+#    Updated: 2016/11/15 18:39:05 by tribeiro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Libft.a
-SRC =	ft_bzero.c \
+NAME = libft.a
+
+FLGS = -Wall -Werror -Wextra
+
+SRCS =	ft_bzero.c \
 		ft_putchar.c \
 		ft_putchar_fd.c \
 		ft_putendl.c \
@@ -61,35 +64,30 @@ SRC =	ft_bzero.c \
 		ft_memalloc.c \
 		ft_memdel.c \
 		ft_itoa.c \
-		ft_atoi.c 
-OBJ = *.o
-FLAG = -Wall -Werror -Wextra
+		ft_atoi.c \
+		ft_lstadd.c \
+		ft_lstdel.c \
+		ft_lstdelone.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
+		ft_lstnew.c \
+		ft_memset.c
+ 
+OBJS =	$(SRCS:.c=.o)
 
-all : cc
+INC =	-I./includes
 
-cc:
-	gcc -c $(SRC) $(FLAG)
-	ar rc $(NAME) $(OBJ)
+all: $(NAME)
+
+$(NAME):
+	gcc -c $(FLGS) $(SRCS) $(INC)
+	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
 
-.PHONY:
-	com clean fclean fc re
-
-lib:
-	gcc -shared -fPIC $(FLAG) -I./$(SRC) $(SRC) -o libft.so
-
-com:
-	gcc $(FLAG) $(SRC) -I srcs -L. -lft
-
-clean: 
-	@rm -f $(OBJ)
+clean:
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
-fc:
-	rm *.c~
-	rm *.h~
-	rm Makefile~
-
-re:		fclean cc
+re: fclean all
