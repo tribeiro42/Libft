@@ -31,3 +31,25 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	}
 	return (new);
 }
+
+/*
+
+  t_list*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+{
+t_list *new;
+t_list *tmp;
+
+new = NULL;
+if (lst && f)
+{
+new = f(lst);
+tmp = new;
+while (lst->next)
+{
+tmp->next = (*f)(lst->next);
+tmp = tmp->next;
+lst = lst->next;
+}
+}
+return (new);
+}*/
