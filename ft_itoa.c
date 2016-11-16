@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 00:02:43 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/12 23:27:51 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/16 18:10:32 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char			*ft_itoa(int n)
 		sig = 1;
 	if (!(d = (char *)malloc(sizeof(char) * lw + sig + 1)))
 		return (NULL);
-	d[lw + 1] = '\0';
+	d[lw + sig] = '\0';
 	while (lw-- > 0)
 	{
 		d[lw + sig] = (nb % 10) + 48;

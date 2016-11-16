@@ -6,13 +6,13 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 22:16:29 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/14 15:36:03 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/11/16 20:12:21 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_isdel(char c)
+static int		delimiteur(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n' || c == '\0')
 		return (1);
@@ -21,26 +21,29 @@ static int		ft_isdel(char c)
 
 char			*ft_strtrim(char const *s)
 {
-	char	*d;
 	int		i;
-	int		y;
-	int		z;
+	int		j;
+	int		k;
+	char	*ret;
 
-	i = 0;
-	z = 0;
-	if (!s)
-		return (NULL);
-	while (ft_isdel(s[i]))
-		i++;
-	y = ft_strlen(s);
-	if (i > y)
-		return (d = malloc(sizeof(char)));
-	while (ft_isdel(s[y]))
-		y--;
-	if (!(d = (char*)malloc(sizeof(char) * (y - i) + 2)))
-		return (NULL);
-	while (i <= y)
-		d[z++] = s[i++];
-	d[z] = '\0';
-	return (d);
+	if (s)
+	{
+		i = 0;
+		k = 0;
+		j = ft_strlen(s);
+		if (!(*s))
+			return ((char*)s);
+		while (delimiteur(s[i]))
+			i++;
+		while (delimiteur(s[j]))
+			j--;
+		if (i >= j)
+			return (ft_strnew(0));
+		if (!(ret = (char*)malloc(sizeof(char) * (j - i) + 2)))
+			return (NULL);
+		while (i <= j)
+			ret[k++] = s[i++];
+		ret[k] = '\0';
+	}
+	return ((s) ? ret : NULL);
 }
