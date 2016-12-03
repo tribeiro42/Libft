@@ -1,3 +1,4 @@
+
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
@@ -5,46 +6,144 @@
 #                                                     +:+ +:+         +:+      #
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2016/08/18 23:36:28 by fchanal           #+#    #+#              #
-#    Updated: 2016/11/25 13:21:46 by tribeiro         ###   ########.fr        #
+#    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
+#    Updated: 2016/12/03 15:10:42 by tribeiro         ###   ########.fr        #
+#    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+#################################################
+###                  Settings                 ###
+#################################################
+
 NAME = libft.a
+CC = gcc
+FLAGS = -Wall -Wextra -Werror
+SRC_PATH = srcs/
+INC_PATH = includes/
+OBJ_DIR = object/
 
-FLGS = -Wall -Werror -Wextra
-SRC_PATH = srcs
-SRCS =	ft_bzero.c ft_putchar.c	ft_putchar_fd.c	ft_putendl.c \
-ft_putendl_fd.c ft_putnbr.c	ft_putnbr_fd.c ft_putstr.c \
-ft_putstr_fd.c ft_strcat.c ft_strchr.c ft_strclr.c \
-ft_strcmp.c	ft_strcpy.c	ft_strdel.c	ft_strdup.c \
-ft_strequ.c	ft_striter.c ft_striteri.c ft_strjoin.c \
-ft_strlcat.c ft_strlen.c ft_strmap.c ft_strmapi.c \
-ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strnequ.c \
-ft_strnew.c	ft_strnstr.c ft_strrchr.c ft_strsplit.c \
-ft_strstr.c	ft_strsub.c	ft_strtrim.c ft_tolower.c ft_toupper.c \
-ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
-ft_memcpy.c ft_memccpy.c ft_memmove.c ft_memchr.c ft_memcmp.c \
-ft_memalloc.c ft_memdel.c ft_itoa.c ft_atoi.c ft_lstadd.c \
-ft_lstdel.c ft_lstdelone.c ft_lstiter.c ft_lstmap.c ft_lstnew.c \
-ft_memset.c
+#################################################
+###                  Colors                   ###
+#################################################
 
-SRC = $(addprefix ./$(SRC_PATH)/, $(SRCS))
-OBJS =	$(SRCS:.c=.o)
+COL_BLACK  = \033[1;30m
+COL_RED    = \033[1;31m
+COL_GREEN  = \033[1;32m
+COL_YELLOW = \033[1;33m
+COL_BLUE   = \033[1;34m
+COL_PURPLE = \033[1;35m
+COL_WHITE  = \033[1;37m
 
-INC = -I.
+#################################################
+###                 Sources                   ###
+#################################################
+
+SRC =\
+\
+str/ft_isalnum.c \
+str/ft_isalpha.c \
+str/ft_isascii.c \
+str/ft_isdigit.c \
+str/ft_isprint.c \
+str/ft_tolower.c \
+str/ft_toupper.c \
+\
+conv/ft_atoi.c \
+conv/ft_itoa.c \
+\
+lst/ft_lstadd.c \
+lst/ft_lstdel.c \
+lst/ft_lstdelone.c \
+lst/ft_lstiter.c \
+lst/ft_lstmap.c \
+lst/ft_lstnew.c \
+\
+mem/ft_memalloc.c \
+mem/ft_memcpy.c \
+mem/ft_memdel.c \
+mem/ft_memchr.c \
+mem/ft_memcmp.c \
+mem/ft_memccpy.c \
+mem/ft_memmove.c \
+mem/ft_memset.c \
+\
+print/ft_putchar.c \
+print/ft_putchar_fd.c \
+print/ft_putendl.c \
+print/ft_putendl_fd.c \
+print/ft_putnbr.c \
+print/ft_putnbr_fd.c \
+print/ft_putstr.c \
+print/ft_putstr_fd.c \
+\
+str/ft_strcat.c \
+str/ft_strchr.c \
+str/ft_strclr.c \
+str/ft_strcmp.c \
+str/ft_strcpy.c \
+str/ft_strdel.c \
+str/ft_strdup.c \
+str/ft_strequ.c \
+str/ft_striter.c \
+str/ft_striteri.c \
+str/ft_strjoin.c \
+str/ft_strlcat.c \
+str/ft_strlen.c \
+str/ft_strmap.c \
+str/ft_strmapi.c \
+str/ft_strncat.c \
+str/ft_strncmp.c \
+str/ft_strncpy.c \
+str/ft_strnequ.c \
+str/ft_strnew.c \
+str/ft_strnstr.c \
+str/ft_strrchr.c \
+str/ft_strrev.c \
+str/ft_strsplit.c \
+str/ft_strstr.c \
+str/ft_strsub.c \
+str/ft_strtrim.c
+
+#################################################
+###                   Format                  ###
+#################################################
+
+SRCS = $(addprefix $(SRC_PATH), $(SRC))
+OBJ = *.o
+OBJS = $(addprefix $(OBJ_DIR), $(OBJ))
+
+#################################################
+###                   Rules                   ###
+#################################################
+
+.PHONY: all build $(OBJ_DIR) $(NAME) clean fclean re
 
 all: $(NAME)
 
-$(NAME):
-	gcc -c $(FLGS) $(SRC) $(INC)
-	ar rc $(NAME) $(OBJS)
-	ranlib $(NAME)
+build: $(SRCS)
+	echo "$(COL_YELLOW)[    BUILDING LIBFT    ]\n"
+	$(CC) -c $(FLAGS) -I$(INC_PATH) $(SRCS)
+	echo "$(COL_YELLOW)->$(COL_BLACK) compilation done."
+
+$(OBJ_DIR):
+	mkdir $@
+	mv $(OBJ) $(OBJ_DIR)
+	echo "$(COL_YELLOW)-> $(COL_BLACK)object created."
+
+$(NAME): build $(OBJ_DIR)
+	ar rc $@ $(OBJS)
+	echo "$(COL_YELLOW)-> $(COL_BLACK)$@ created."
+	ranlib $@
+	echo "$(COL_YELLOW)-> $(COL_BLACK)$@ sorted.\n"
 
 clean:
-	rm -f $(OBJS)
+	echo "$(COL_YELLOW)[    CLEANING LIBFT    ]\n"
+	rm -rf $(OBJ_DIR)
+	echo "$(COL_YELLOW)-> $(COL_BLACK)object removed."
 
 fclean: clean
 	rm -f $(NAME)
+	echo "$(COL_YELLOW)-> $(COL_BLACK)$(NAME) removed.\n"
 
 re: fclean all
