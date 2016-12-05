@@ -1,66 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/10 00:02:43 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/12/03 15:42:55 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/12/03 15:33:21 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/12/05 15:52:36 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include "libft.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 
-static int		ft_lenword(int n)
+static int		ft_lenword(int n, int base)
 {
 	int		lw;
 
 	lw = 1;
-	while (n /= 10)
+	while (n /= base)
 		lw++;
 	return (lw);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa_base(int n, int base)
 {
-	char		*d;
-	int			lw;
-	int			sig;
-	unsigned	nb;
+	char	basetab[37];
+	char	*dest;
+	int		len;
 
-	sig = 0;
-	lw = ft_lenword(n);
-	nb = (n < 0) ? -n : n;
-	if (n < 0)
-		sig = 1;
-	if (!(d = (char *)malloc(sizeof(char) * lw + sig + 1)))
+	basetab = "0123456789abcdefghijklmnopqrstuvwxyz";
+	len = ft_lenword(n, base);
+	if (!(dest = malloc(sizeof(char) * (len + 1))))
 		return (NULL);
-	d[lw + sig] = '\0';
-	while (lw-- > 0)
+	dest[len + 1] = '\0';
+	while (len--)
 	{
-		d[lw + sig] = (nb % 10) + 48;
-		nb /= 10;
+		dest[len] = basetab[(n % base)];
+		n /= base;
 	}
-	if (sig == 1)
-		d[0] = '-';
-	return (d);
+	return (dest);
 }
-
 int		main(void)
 {
-	printf("REturn -> %s\n", ft_itoa(10));
-	printf("WTF ?! - >%lu\n", sizeof(unsigned));
-	return (0);
+	printf("RESULT ->%s", ft_itoa_base(354, 2));
+	return 0;
 }
-
-
-
-
-
 
 
 
