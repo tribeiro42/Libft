@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/12/03 14:56:47 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/12/09 12:49:21 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
-
+void				ft_print_binary(void *data, size_t size);
 /*
 ** STR  : dir str
 */
@@ -86,6 +86,10 @@ int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const*s2);
+char				*ft_strjoin(char const *s1, char const*s2);
+char				*ft_strjoin1(char **s1, char **s2);
+char				*ft_strjoin2(char **s1, char **s2);
+char				*ft_str_merge(char **s1, char **s2);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 

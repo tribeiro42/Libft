@@ -1,4 +1,3 @@
-
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
@@ -7,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
-#    Updated: 2016/12/03 15:10:42 by tribeiro         ###   ########.fr        #
+#    Updated: 2016/12/09 12:44:26 by tribeiro         ###   ########.fr        #
 #    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -51,6 +50,7 @@ str/ft_toupper.c \
 \
 conv/ft_atoi.c \
 conv/ft_itoa.c \
+conv/ft_itoa_base.c \
 \
 lst/ft_lstadd.c \
 lst/ft_lstdel.c \
@@ -59,6 +59,7 @@ lst/ft_lstiter.c \
 lst/ft_lstmap.c \
 lst/ft_lstnew.c \
 \
+mem/ft_bzero.c \
 mem/ft_memalloc.c \
 mem/ft_memcpy.c \
 mem/ft_memdel.c \
@@ -76,6 +77,7 @@ print/ft_putnbr.c \
 print/ft_putnbr_fd.c \
 print/ft_putstr.c \
 print/ft_putstr_fd.c \
+print/ft_print_binary.c \
 \
 str/ft_strcat.c \
 str/ft_strchr.c \
@@ -103,6 +105,9 @@ str/ft_strrev.c \
 str/ft_strsplit.c \
 str/ft_strstr.c \
 str/ft_strsub.c \
+str/ft_str_join1.c \
+str/ft_str_join2.c \
+str/ft_str_merge.c \
 str/ft_strtrim.c
 
 #################################################
@@ -127,7 +132,7 @@ build: $(SRCS)
 	echo "$(COL_YELLOW)->$(COL_BLACK) compilation done."
 
 $(OBJ_DIR):
-	mkdir $@
+	#mkdir $@
 	mv $(OBJ) $(OBJ_DIR)
 	echo "$(COL_YELLOW)-> $(COL_BLACK)object created."
 
