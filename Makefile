@@ -6,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
-#    Updated: 2016/12/09 12:44:26 by tribeiro         ###   ########.fr        #
+#    Updated: 2016/12/13 14:45:57 by tribeiro         ###   ########.fr        #
 #    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -105,9 +105,9 @@ str/ft_strrev.c \
 str/ft_strsplit.c \
 str/ft_strstr.c \
 str/ft_strsub.c \
-str/ft_str_join1.c \
-str/ft_str_join2.c \
-str/ft_str_merge.c \
+str/ft_strjoin1.c \
+str/ft_strjoin2.c \
+str/ft_strmerge.c \
 str/ft_strtrim.c
 
 #################################################
@@ -144,7 +144,7 @@ $(NAME): build $(OBJ_DIR)
 
 clean:
 	echo "$(COL_YELLOW)[    CLEANING LIBFT    ]\n"
-	rm -rf $(OBJ_DIR)
+	#rm -rf $(OBJ_DIR)
 	echo "$(COL_YELLOW)-> $(COL_BLACK)object removed."
 
 fclean: clean

@@ -6,14 +6,11 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 00:02:43 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/12/03 15:42:55 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/12/09 14:43:40 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static int		ft_lenword(int n)
 {
@@ -49,28 +46,3 @@ char			*ft_itoa(int n)
 		d[0] = '-';
 	return (d);
 }
-
-int		main(void)
-{
-	printf("REturn -> %s\n", ft_itoa(10));
-	printf("WTF ?! - >%lu\n", sizeof(unsigned));
-	return (0);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

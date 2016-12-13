@@ -1,17 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
+/*   ft_str_merge.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/25 14:37:53 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/25 15:29:35 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/30 16:42:04 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/12/09 14:47:14 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putnbr_base(int nb, int base)
+#include "libft.h"
+#include <stdlib.h>
+
+char	*ft_strjoin1(char **s1, char **s2)
 {
+	char	*tmp;
 
-
+	tmp = ft_strjoin(*s1, *s2);
+	free(*s1);
+	*s1 = NULL;
+	return (tmp);
 }

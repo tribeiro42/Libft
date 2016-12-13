@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/12/09 12:49:21 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/12/13 14:47:15 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef struct		s_list
 
 void				*ft_memset(void *ptr, int value, size_t num);
 void				ft_bzero(void *s, size_t n);
+void				*ft_memalloc(size_t size);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
@@ -37,6 +38,7 @@ int					ft_memcmp(const void *s1, const void *s2, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
 void				ft_memdel(void **ap);
+
 
 /*
 ** PRINT : dir print
@@ -89,7 +91,7 @@ char				*ft_strjoin(char const *s1, char const*s2);
 char				*ft_strjoin(char const *s1, char const*s2);
 char				*ft_strjoin1(char **s1, char **s2);
 char				*ft_strjoin2(char **s1, char **s2);
-char				*ft_str_merge(char **s1, char **s2);
+char				*ft_strmerge(char **s1, char **s2);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 
