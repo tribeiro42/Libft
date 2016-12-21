@@ -6,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
-#    Updated: 2016/12/13 14:45:57 by tribeiro         ###   ########.fr        #
+#    Updated: 2016/12/21 14:42:48 by tribeiro         ###   ########.fr        #
 #    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -58,6 +58,7 @@ lst/ft_lstdelone.c \
 lst/ft_lstiter.c \
 lst/ft_lstmap.c \
 lst/ft_lstnew.c \
+lst/ft_lst_sort_content.c \
 \
 mem/ft_bzero.c \
 mem/ft_memalloc.c \
