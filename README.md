@@ -24,8 +24,8 @@
 										/*  **************************************  */
 ```
 
-											* Nombres de fonction :  47/52
-											* Fuction tester	    :  0/18
+											* Nombres de fonction :  52/52
+											* Fuction tester	    :  52/52
 
 ```
 												    	(   )		(   )
@@ -95,10 +95,58 @@
 ```
 ```
 										/*  *************************************	*/
+										/*					CONV					*/
+										/*											*/
+										/* 		NAME	CODE		DONE			*/
+										/*											*/
+										/*  **************************************  */
+```
+```
+										- ft_itoa_base	[ * ]		[ * ]
+
+```
+```
+										/*  *************************************	*/
 										/*											*/
 										/*				DESCRIPTION					*/
 										/*				 PROTOTYPE					*/
 										/* 				   RETURN					*/
 										/*											*/
 										/*  **************************************  */
+```
+```
+										FT_ITOA_BASE : Convertie un int en une base donnees,
+													   puis renvoie ce int en une chaine de
+													   char ASCII
+
+													   char *ft_itoa_base(int nb, int base)
+```
+```
+										/*  *************************************	*/
+										/*					PRINT					*/
+										/*											*/
+										/* 		NAME	CODE		DONE			*/
+										/*											*/
+										/*  **************************************  */
+```
+```
+										- ft_print_binary	[ * ]		[ * ]
+
+```
+```
+										/*  *************************************	*/
+										/*											*/
+										/*				DESCRIPTION					*/
+										/*				 PROTOTYPE					*/
+										/* 				   RETURN					*/
+										/*											*/
+										/*  **************************************  */
+```
+```
+										FT_PRINT_BINARY : Affiche la representation binaire,
+														  d'une varibale.
+
+														  void	ft_print_binary(void *var, int size)
+
+
 ```
