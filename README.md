@@ -150,3 +150,47 @@
 
 
 ```
+```
+										/*  *************************************	*/
+										/*					STR 					*/
+										/*											*/
+										/* 		NAME	CODE		DONE			*/
+										/*											*/
+										/*  **************************************  */
+```
+```
+										- ft_strmerge   	[ * ]		[ * ]
+										- ft_strjoin1   	[ * ]		[   ]
+										- ft_strjoin2		[ * ]		[   ]
+
+```
+```
+										/*  *************************************	*/
+										/*											*/
+										/*				DESCRIPTION					*/
+										/*				 PROTOTYPE					*/
+										/* 				   RETURN					*/
+										/*											*/
+										/*  **************************************  */
+```
+```
+										FT_STRMERGE     : Alloue et retourne une chaine de caractères
+														  “fraiche” terminée par un ’\0’ résultant de la concaténation
+														  des parametre apres les avoir libere.
+
+														  char *ft_strmerge(char **str1, char **str2)
+
+
+										FT_STRJOIN1     : Alloue et retourne une chaine de caractères
+														  “fraiche” terminée par un ’\0’ résultant de la concaténation
+														  des parametre apres avoir libere le premier parametre.
+
+														  char *ft_strjoin1(char **str1, char *str2)
+
+
+										FT_STRJOIN2     : Alloue et retourne une chaine de caractères
+														  “fraiche” terminée par un ’\0’ résultant de la concaténation
+														  des parametre apres les libere le second parametre.
+
+														  char *ft_strjoin2(char *str1, char **str2)
+```
