@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/12/20 17:21:38 by tribeiro         ###   ########.fr       */
+/*   Updated: 2016/12/25 18:22:26 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,7 @@ char				**ft_strsplit(char const *s, char c);
 */
 
 char				*ft_itoa(int n);
+char				*ft_itoa_base(int n, int base);
 int					ft_atoi(char *str);
 
 /*
