@@ -78,6 +78,8 @@ print/ft_putnbr.c \
 print/ft_putnbr_fd.c \
 print/ft_putstr.c \
 print/ft_putstr_fd.c \
+print/ft_putaddr.c \
+print/ft_puthex.c \
 print/ft_print_binary.c \
 \
 str/ft_strcat.c \

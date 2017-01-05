@@ -17,6 +17,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+# define HEX "0123456789abcdef"
+
 typedef struct		s_list
 {
 	void			*content;
@@ -52,6 +54,8 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
+void				ft_putaddr(void *ptr);
+void				ft_puthex(unsigned long l);
 void				ft_print_binary(void *data, size_t size);
 /*
 ** STR  : dir str
