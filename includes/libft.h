@@ -110,7 +110,8 @@ int					ft_atoi(char *str);
 /*
 ** LIST : dir lst
 */
-
+t_list				*ft_create_elem(void *content, size_t size);
+void				ft_list_push_back(t_list **begin_list, void *data, size_t size);
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));

@@ -52,6 +52,8 @@ conv/ft_atoi.c \
 conv/ft_itoa.c \
 conv/ft_itoa_base.c \
 \
+lst/ft_create_elem.c \
+lst/ft_push_back.c \
 lst/ft_lstadd.c \
 lst/ft_lstdel.c \
 lst/ft_lstdelone.c \
