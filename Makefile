@@ -6,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
-#    Updated: 2016/12/21 14:42:48 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/01/13 15:31:47 by tribeiro         ###   ########.fr        #
 #    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -73,6 +73,7 @@ mem/ft_memmove.c \
 mem/ft_memset.c \
 \
 print/ft_putchar.c \
+print/ft_putnchar.c \
 print/ft_putchar_fd.c \
 print/ft_putendl.c \
 print/ft_putendl_fd.c \

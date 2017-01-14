@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/12/25 18:22:26 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/13 15:31:28 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ void				ft_memdel(void **ap);
 */
 
 void				ft_putchar(char c);
+void				ft_putnchar(char c, int n);
 void				ft_putstr(char const *s);
 void				ft_putendl(char const *s);
 void				ft_putnbr(int n);
