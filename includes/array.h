@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   array.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 21:09:53 by tribeiro         ###   ########.fr       */
+/*   Created: 2017/01/14 21:00:00 by tribeiro          #+#    #+#             */
+/*   Updated: 2017/01/14 21:00:29 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef		ARRAY_H
+# define	ARRAY_H
 
-# include <string.h>
-# include <stdlib.h>
-# include <unistd.h>
+/*
+** ARRAY : array function free
+*/
 
-# include "array.h"
-# include "conv.h"
-# include "list.h"
-# include "mem.h"
-# include "print.h"
-# include "str.h"
+void				ft_arraydel_2d(char **ret, int mode);
 
 #endif

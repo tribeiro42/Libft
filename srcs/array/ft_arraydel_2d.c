@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   ft_tabdel_2d.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 21:09:53 by tribeiro         ###   ########.fr       */
+/*   Created: 2017/01/14 20:46:03 by tribeiro          #+#    #+#             */
+/*   Updated: 2017/01/14 21:07:32 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <string.h>
-# include <stdlib.h>
-# include <unistd.h>
+void		ft_arraydel_2d(char **array, int mode)
+{
+	int			i;
 
-# include "array.h"
-# include "conv.h"
-# include "list.h"
-# include "mem.h"
-# include "print.h"
-# include "str.h"
-
-#endif
+	i = 0;
+	while(array && array[i])
+	{
+		if (mode)
+		{
+			ft_putstr("FREE ->");
+			ft_putendl(array[i]);
+		}
+		ft_strdel(&(array[i]));
+		i++;
+	}
+	free(array);
+	array = NULL;
+	if (mode)
+		ft_putendl("PTR FREE AND NULL");
+}
