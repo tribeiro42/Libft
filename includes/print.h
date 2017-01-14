@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:02:37 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 21:19:51 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:05:36 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,18 @@ void				ft_putnbr_fd(int n, int fd);
 void				ft_putnbr(int n);
 
 void				ft_putaddr(void *ptr);
+void				ft_putbase(int n, int b);
 void				ft_puthex(unsigned long l);
 void				ft_print_binary(void *data, size_t size);
 
 #endif
+
+
+
+
+
+
+
+
+
+

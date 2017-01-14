@@ -6,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
-#    Updated: 2017/01/14 20:59:22 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/01/14 22:05:50 by tribeiro         ###   ########.fr        #
 #    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -82,6 +82,7 @@ print/ft_putnbr_fd.c \
 print/ft_putstr.c \
 print/ft_putstr_fd.c \
 print/ft_putaddr.c \
+print/ft_putbase.c \
 print/ft_puthex.c \
 print/ft_print_binary.c \
 \

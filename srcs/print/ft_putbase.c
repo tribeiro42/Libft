@@ -1,34 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tabdel_2d.c                                     :+:      :+:    :+:   */
+/*   ft_putbase.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/14 20:46:03 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 20:46:18 by tribeiro         ###   ########.fr       */
+/*   Created: 2017/01/14 21:25:22 by tribeiro          #+#    #+#             */
+/*   Updated: 2017/01/14 22:08:36 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_tabdel_2d(char **ret, int mode)
+void		ft_putbase(int n, int b)
 {
-	int			i;
-
-	i = 0;
-	while(ret && ret[i])
-	{
-		if (mode)
-		{
-			ft_putstr("FREE ->");
-			ft_putendl(ret[i]);
-		}
-		ft_strdel(&(ret[i]));
-		i++;
-	}
-	free(ret);
-	ret = NULL;
-	if (mode)
-		ft_putendl("PTR FREE AND NULL");
+	if (b < 2 || b > 36)
+		return ;
+	if(b == 2)
+		write(1, "0b", 1);
+	if(b == 8)
+		write(1, "\\", 1);
+	if(b == 16)
+		write(1, "0x", 1);
+	if (n > (b - 1))
+		ft_putbase(n / b, b);
+	ft_putchar(BASE[n % b]);
 }
