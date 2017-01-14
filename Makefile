@@ -6,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
-#    Updated: 2017/01/13 15:31:47 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/01/14 20:50:25 by tribeiro         ###   ########.fr        #
 #    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -114,8 +114,9 @@ str/ft_strsub.c \
 str/ft_strjoin1.c \
 str/ft_strjoin2.c \
 str/ft_strmerge.c \
-str/ft_strtrim.c
-
+str/ft_strtrim.c\
+\
+array/ft_tabdel_2d.c
 #################################################
 ###                   Format                  ###
 #################################################

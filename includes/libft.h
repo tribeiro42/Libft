@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/13 15:31:28 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/14 20:48:59 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,6 +109,12 @@ char				*ft_itoa_base(int n, int base);
 int					ft_atoi(char *str);
 
 /*
+** ARRAY : array function
+*/
+
+void				ft_tabdel_2d(char **ret, int mode);
+
+/*
 ** LIST : dir lst
 */
 t_list				*ft_create_elem(void *content, size_t size);
@@ -121,3 +127,9 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_lst_sort_content(t_list *lst, int (*cmp)());
 #endif
+
+
+
+
+
+
