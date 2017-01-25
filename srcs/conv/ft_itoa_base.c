@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 15:33:21 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 21:19:31 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/25 15:44:53 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,9 @@ char	*ft_itoa_base(int n, int base)
 	char	*dest;
 	int		len;
 
+	dest = NULL;
 	len = ft_lenword(n, base);
-	if (!(dest = malloc(sizeof(char) * (len + 1))))
+	if (!(dest = (char*)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
 	dest[len + 1] = '\0';
 	while (len--)
@@ -38,3 +39,13 @@ char	*ft_itoa_base(int n, int base)
 	}
 	return (dest);
 }
+
+
+
+
+
+
+
+
+
+
