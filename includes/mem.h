@@ -6,12 +6,12 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:04:15 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 21:11:21 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/26 16:22:35 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef		MEM_H
-# define	MEM_H
+#ifndef MEM_H
+# define MEM_H
 
 /*
 ** MEM : dir mem

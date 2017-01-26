@@ -6,13 +6,12 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:02:37 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 22:05:36 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/26 16:22:54 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef		PRINT_H
-# define	PRINT_H
-
+#ifndef PRINT_H
+# define PRINT_H
 # define HEX "0123456789abcdef"
 
 void				ft_putchar(char c);
@@ -33,13 +32,3 @@ void				ft_puthex(unsigned long l);
 void				ft_print_binary(void *data, size_t size);
 
 #endif
-
-
-
-
-
-
-
-
-
-

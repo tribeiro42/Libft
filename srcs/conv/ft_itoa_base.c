@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 15:33:21 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/25 15:44:53 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/26 16:26:00 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int		ft_lenword(int n, int base)
 	return (lw);
 }
 
-char	*ft_itoa_base(int n, int base)
+char			*ft_itoa_base(int n, int base)
 {
 	char	*dest;
 	int		len;
@@ -39,13 +39,3 @@ char	*ft_itoa_base(int n, int base)
 	}
 	return (dest);
 }
-
-
-
-
-
-
-
-
-
-

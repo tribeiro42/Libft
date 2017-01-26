@@ -6,13 +6,12 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:01:44 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 21:02:00 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/26 16:24:28 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef		STR_H
-# define	STR_H
-
+#ifndef STR_H
+# define STR_H
 
 size_t				ft_strlen(char const *str);
 char				*ft_strdup(const char *s1);

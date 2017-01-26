@@ -6,12 +6,12 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 22:11:53 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 22:25:42 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/26 16:21:14 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef		COLOR_H
-# define	COLOR_H
+#ifndef COLOR_H
+# define COLOR_H
 
 /*
 **	TEXT ATTRIBUTES
@@ -37,7 +37,6 @@
 # define FC_CYAN	"\033[36m"
 # define FC_RED		"\033[31m"
 # define FC_WHITE	"\033[37m"
-
 
 /*
 **	BACKGROUND COLORS

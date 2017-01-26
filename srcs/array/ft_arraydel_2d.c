@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 20:46:03 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 21:07:32 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/26 16:25:17 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void		ft_arraydel_2d(char **array, int mode)
 	int			i;
 
 	i = 0;
-	while(array && array[i])
+	while (array && array[i])
 	{
 		if (mode)
 		{

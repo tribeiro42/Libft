@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:25:22 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 22:08:36 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/26 16:30:24 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ void		ft_putbase(int n, int b)
 {
 	if (b < 2 || b > 36)
 		return ;
-	if(b == 2)
+	if (b == 2)
 		write(1, "0b", 1);
-	if(b == 8)
+	if (b == 8)
 		write(1, "\\", 1);
-	if(b == 16)
+	if (b == 16)
 		write(1, "0x", 1);
 	if (n > (b - 1))
 		ft_putbase(n / b, b);

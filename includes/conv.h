@@ -6,14 +6,14 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:00:45 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 21:16:51 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/26 16:22:14 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef		CONV_H
-# define	CONV_H
-
+#ifndef CONV_H
+# define CONV_H
 # define BASE "0123456789abcdefghijklmnopqrstuvwxyz"
+
 /*
 ** INT TO ASCII
 */

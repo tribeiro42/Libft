@@ -6,12 +6,12 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:04:38 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 21:10:49 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/26 16:24:14 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef		LIST_H
-# define	LIST_H
+#ifndef LIST_H
+# define LIST_H
 
 typedef struct		s_list
 {
@@ -20,9 +20,9 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-
 t_list				*ft_create_elem(void *content, size_t size);
-void				ft_list_push_back(t_list **begin_list, void *data, size_t size);
+void				ft_list_push_back(t_list **begin_list,
+void *data, size_t size);
 
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
