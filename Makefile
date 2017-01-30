@@ -6,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
-#    Updated: 2017/01/14 22:05:50 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/01/30 17:36:25 by tribeiro         ###   ########.fr        #
 #    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -77,6 +77,7 @@ print/ft_putnchar.c \
 print/ft_putchar_fd.c \
 print/ft_putendl.c \
 print/ft_putendl_fd.c \
+print/ft_putendl_array2d.c \
 print/ft_putnbr.c \
 print/ft_putnbr_fd.c \
 print/ft_putstr.c \
@@ -116,8 +117,10 @@ str/ft_strjoin1.c \
 str/ft_strjoin2.c \
 str/ft_strmerge.c \
 str/ft_strtrim.c\
+str/get_next_line.c\
 \
-array/ft_arraydel_2d.c
+array/ft_arraydel_2d.c\
+array/ft_arraysize_2d.c
 #################################################
 ###                   Format                  ###
 #################################################

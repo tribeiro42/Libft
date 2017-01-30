@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   array.h                                            :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/14 21:00:00 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/30 17:35:57 by tribeiro         ###   ########.fr       */
+/*   Created: 2016/11/25 18:34:03 by tribeiro          #+#    #+#             */
+/*   Updated: 2016/12/17 13:30:08 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ARRAY : array function free
-*/
+#ifndef GET_NEXT_LINE_H
 
-#ifndef ARRAY_H
-# define ARRAY_H
+# define GET_NEXT_LINE_H
+# define BUFF_SIZE 40
+# include <unistd.h>
 
-void				ft_arraydel_2d(char **ret, int mode);
-size_t				ft_arraysize_2d(char ***array);
-
+int		get_next_line(const int fd, char **line);
 #endif

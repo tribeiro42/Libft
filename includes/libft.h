@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 04:05:46 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/14 22:13:19 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/30 14:32:11 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@
 # include "mem.h"
 # include "print.h"
 # include "str.h"
-
+# include "get_next_line.h"
 # include "color.h"
 #endif
