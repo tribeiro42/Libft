@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 05:35:00 by tribeiro          #+#    #+#             */
-/*   Updated: 2016/11/28 18:33:34 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/01/31 14:35:46 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,23 +18,21 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 	int		y;
 
-	if (s1 && s2)
+	if (!(s1 || s2))
+		return (ft_strdup((s1 == NULL) ? s2 : s1));
+	i = 0;
+	y = 0;
+	if (!(dst = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
+		return (NULL);
+	while (s1[i])
 	{
-		i = 0;
-		y = 0;
-		if (!(dst = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
-			return (NULL);
-		while (s1[i])
-		{
-			dst[i] = s1[i];
-			i++;
-		}
-		while (s2[y])
-		{
-			dst[i + y] = s2[y];
-			y++;
-		}
-		return (dst);
+		dst[i] = s1[i];
+		i++;
 	}
-	return (NULL);
+	while (s2[y])
+	{
+		dst[i + y] = s2[y];
+		y++;
+	}
+	return (dst);
 }
