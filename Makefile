@@ -6,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
-#    Updated: 2017/01/30 18:45:20 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/01/31 12:47:36 by tribeiro         ###   ########.fr        #
 #    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -51,6 +51,7 @@ str/ft_toupper.c \
 conv/ft_atoi.c \
 conv/ft_itoa.c \
 conv/ft_itoa_base.c \
+conv/ft_atl.c \
 \
 lst/ft_create_elem.c \
 lst/ft_push_back.c \
