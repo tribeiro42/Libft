@@ -19,11 +19,11 @@ t_list		*ft_atl(char ***array)
 
 	begin_list = NULL;
 	tmp = *array;
-	while(*array && **array)
+	while (*array && **array)
 	{
 		ft_list_push_back(&begin_list, **array, ft_strlen(**array));
 		(*array)++;
 	}
 	*array = tmp;
-	return(begin_list);
+	return (begin_list);
 }

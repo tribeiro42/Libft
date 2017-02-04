@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/30 13:49:57 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/30 18:44:35 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/02/01 16:29:17 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putendl_array2d(char ***array)
 	char	**tmp;
 
 	tmp = *array;
-	while(*array && **array)
+	while (*array && **array)
 	{
 		ft_putendl(**array);
 		(*array)++;

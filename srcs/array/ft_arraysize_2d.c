@@ -19,7 +19,7 @@ size_t		ft_arraysize_2d(char ***array)
 
 	size = 0;
 	tmp = *array;
-	while(*array && **array)
+	while (*array && **array)
 	{
 		size++;
 		(*array)++;

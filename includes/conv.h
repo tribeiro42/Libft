@@ -13,7 +13,8 @@
 #ifndef CONV_H
 # define CONV_H
 # define BASE "0123456789abcdefghijklmnopqrstuvwxyz"
-#include "list.h"
+# include "list.h"
+
 /*
 ** INT TO ASCII
 */

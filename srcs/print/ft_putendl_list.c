@@ -18,8 +18,7 @@ void		ft_putendl_list(t_list **list)
 
 	begin_list = NULL;
 	begin_list = (*list);
-
-	while(begin_list)
+	while (begin_list)
 	{
 		ft_putendl(begin_list->content);
 		begin_list = begin_list->next;

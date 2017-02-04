@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 20:46:03 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/26 16:25:17 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/02/02 10:37:06 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ void		ft_arraydel_2d(char **array, int mode)
 		i++;
 	}
 	free(array);
-	array = NULL;
 	if (mode)
-		ft_putendl("PTR FREE AND NULL");
+		ft_putendl("PTR FREE AND NOT NULL");
 }
