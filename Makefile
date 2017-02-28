@@ -6,7 +6,7 @@
 #    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
-#    Updated: 2017/02/04 15:22:17 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/02/28 19:36:25 by tribeiro         ###   ########.fr        #
 #    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -119,6 +119,7 @@ str/ft_strjoin1.c \
 str/ft_strjoin2.c \
 str/ft_strmerge.c \
 str/ft_strtrim.c\
+str/ft_split_whitspaces.c\
 str/get_next_line.c\
 \
 array/ft_arraydel_2d.c\

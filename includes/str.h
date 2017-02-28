@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:01:44 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/26 16:24:28 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/02/28 19:33:47 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,6 @@ char				*ft_strjoin2(char **s1, char **s2);
 char				*ft_strmerge(char **s1, char **s2);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
+char				**ft_split_whitespaces(char *str);
 
 #endif
