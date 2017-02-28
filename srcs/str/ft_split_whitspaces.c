@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/16 20:22:08 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/02/28 19:35:00 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/02/28 21:21:01 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int		is_delimitor(char c)
 	return (0);
 }
 
-static char		*ft_strncpy(char *dest, char *src, unsigned int n)
+static char		*ft_strncpy2(char *dest, char *src, unsigned int n)
 {
 	unsigned int	lenght;
 	char			*x;
@@ -91,7 +91,7 @@ char		**ft_split_whitespaces(char *str)
 			i++;
 		size = str_len(&str[i]);
 		tab[i2] = (char*)malloc(sizeof(char) * size + 1);
-		ft_strncpy(tab[i2], str + i, size);
+		ft_strncpy2(tab[i2], str + i, size);
 		i += size;
 		i2++;
 	}
