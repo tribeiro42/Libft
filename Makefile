@@ -1,26 +1,24 @@
-# **************************************************************************** #
+#******************************************************************************#
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
+#    Makefile2                                          :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fchanal <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2016/11/21 11:13:05 by fchanal           #+#    #+#              #
-#    Updated: 2017/02/28 19:36:25 by tribeiro         ###   ########.fr        #
-#    Updated: 2016/11/21 20:40:52 by fchanal          ###   ########.fr        #
+#    Created: 2017/03/02 13:51:03 by tribeiro          #+#    #+#              #
+#    Updated: 2017/03/02 13:52:21 by tribeiro         ###   ########.fr        #
 #                                                                              #
-# **************************************************************************** #
+#******************************************************************************#
 
 #################################################
 ###                  Settings                 ###
 #################################################
 
-NAME = libft.a
-CC = gcc
+NAME = Libft.a
+CC = clang
 FLAGS = -Wall -Wextra -Werror
-SRC_PATH = srcs/
-INC_PATH = includes/
-OBJ_DIR = object/
+SRC_PATH = ./srcs/
+INC_PATH = -I./includes/
 
 #################################################
 ###                  Colors                   ###
@@ -124,45 +122,43 @@ str/get_next_line.c\
 \
 array/ft_arraydel_2d.c\
 array/ft_arraysize_2d.c
+
 #################################################
 ###                   Format                  ###
 #################################################
 
 SRCS = $(addprefix $(SRC_PATH), $(SRC))
-OBJ = *.o
-OBJS = $(addprefix $(OBJ_DIR), $(OBJ))
+O = $(notdir $(SRC))
+OB = $(basename $(O))
+OBJ = $(addsuffix .o ,$(OB))
 
 #################################################
 ###                   Rules                   ###
 #################################################
 
-.PHONY: all build $(OBJ_DIR) $(NAME) clean fclean re
+.PHONY: all clean fclean re
 
 all: $(NAME)
 
-build: $(SRCS)
-	echo "$(COL_YELLOW)[    BUILDING LIBFT    ]\n"
-	$(CC) -c $(FLAGS) -I$(INC_PATH) $(SRCS)
-	echo "$(COL_YELLOW)->$(COL_BLACK) compilation done."
+$(OBJ): $(SRCS)
+	@echo "$(COL_YELLOW)[    BUILDING LIBFT    ]\n"
+	@$(CC) -c $(FLAGS) $(INC_PATH) $(SRCS)
+	@echo "$(COL_YELLOW)->$(COL_BLACK) compilation done."
+	@echo "$(COL_YELLOW)-> $(COL_BLACK)object created."
 
-$(OBJ_DIR):
-	#mkdir $@
-	mv $(OBJ) $(OBJ_DIR)
-	echo "$(COL_YELLOW)-> $(COL_BLACK)object created."
-
-$(NAME): build $(OBJ_DIR)
-	ar rc $@ $(OBJS)
-	echo "$(COL_YELLOW)-> $(COL_BLACK)$@ created."
-	ranlib $@
-	echo "$(COL_YELLOW)-> $(COL_BLACK)$@ sorted.\n"
+$(NAME): $(OBJ)
+	@ar rc $@ $(OBJ)
+	@echo "$(COL_YELLOW)-> $(COL_BLACK)$@ created."
+	@ranlib $@
+	@echo "$(COL_YELLOW)-> $(COL_BLACK)$@ sorted.\n"
 
 clean:
-	echo "$(COL_YELLOW)[    CLEANING LIBFT    ]\n"
-	#rm -rf $(OBJ_DIR)
-	echo "$(COL_YELLOW)-> $(COL_BLACK)object removed."
+	@echo "$(COL_YELLOW)[    CLEANING LIBFT    ]\n"
+	@rm -rf $(OBJ)
+	@echo "$(COL_YELLOW)-> $(COL_BLACK)object removed."
 
 fclean: clean
-	rm -f $(NAME)
-	echo "$(COL_YELLOW)-> $(COL_BLACK)$(NAME) removed.\n"
+	@rm -f $(NAME)
+	@echo "$(COL_YELLOW)-> $(COL_BLACK)$(NAME) removed.\n"
 
 re: fclean all
