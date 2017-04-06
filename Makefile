@@ -6,7 +6,7 @@
 #    By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/02 13:51:03 by tribeiro          #+#    #+#              #
-#    Updated: 2017/03/02 13:52:21 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/04/03 19:28:45 by tribeiro         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -70,6 +70,7 @@ mem/ft_memcmp.c \
 mem/ft_memccpy.c \
 mem/ft_memmove.c \
 mem/ft_memset.c \
+mem/ft_realloc_char.c\
 \
 print/ft_putchar.c \
 print/ft_putnchar.c \

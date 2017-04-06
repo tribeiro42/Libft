@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:04:15 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/26 16:22:35 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/04/03 19:29:17 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,5 @@ void				*ft_memchr(const void *s, int c, size_t n);
 
 void				ft_memdel(void **ap);
 
+char				*ft_realloc_char(char *tab, size_t len);
 #endif
