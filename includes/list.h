@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:04:38 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/26 16:24:14 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/04/18 21:40:11 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_lst_sort_content(t_list *lst, int (*cmp)());
-
+int					ft_lst_size(t_list *lst);
 #endif

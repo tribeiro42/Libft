@@ -6,26 +6,26 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/03 19:07:41 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/05/11 17:42:37 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/04/18 21:39:14 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_realloc_char(char *tab, size_t len)
+int		ft_lst_size(t_list *list)
 {
-	char	*new;
-	int		i;
+	int		s;
+	t_list	*begin;
 
-	i = 0;
-	if(((new = (char*)malloc(sizeof(char) * len + 1)) == NULL) || (len = 0))
-		return (tab);
-	ft_bzero(new, len);
-	while (tab[i])
+	s = 0;
+	if(list == NULL)
+		return (0);
+	begin = list;
+	while(list != NULL)
 	{
-		new[i] = tab[i];
-		i++;
+		s++;
+		list = list->next;
 	}
-	free(tab);
-	return (new);
+	list = begin;
+	return (s);
 }

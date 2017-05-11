@@ -6,7 +6,7 @@
 #    By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/02 13:51:03 by tribeiro          #+#    #+#              #
-#    Updated: 2017/04/03 19:28:45 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/04/18 21:40:35 by tribeiro         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -59,6 +59,7 @@ lst/ft_lstdelone.c \
 lst/ft_lstiter.c \
 lst/ft_lstmap.c \
 lst/ft_lstnew.c \
+lst/ft_lst_size.c \
 lst/ft_lst_sort_content.c \
 \
 mem/ft_bzero.c \
