@@ -6,7 +6,7 @@
 #    By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/02 13:51:03 by tribeiro          #+#    #+#              #
-#    Updated: 2017/04/18 21:40:35 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/05/11 20:40:58 by tribeiro         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -116,6 +116,7 @@ str/ft_strsplit.c \
 str/ft_strstr.c \
 str/ft_strsub.c \
 str/ft_strjoin1.c \
+str/ft_strjoin_1.c \
 str/ft_strjoin2.c \
 str/ft_strmerge.c \
 str/ft_strtrim.c\

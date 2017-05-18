@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:01:44 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/02/28 19:33:47 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/05/11 20:40:39 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const*s2);
 char				*ft_strjoin(char const *s1, char const*s2);
 char				*ft_strjoin1(char **s1, char **s2);
+char				*ft_strjoin_1(char **s1, char *s2);
 char				*ft_strjoin2(char **s1, char **s2);
 char				*ft_strmerge(char **s1, char **s2);
 char				*ft_strtrim(char const *s);
