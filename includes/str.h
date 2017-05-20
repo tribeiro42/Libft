@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:01:44 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/05/11 20:40:39 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/05/20 17:24:58 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,5 @@ char				*ft_strmerge(char **s1, char **s2);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 char				**ft_split_whitespaces(char *str);
-
+int					ft_isquote(char c);
 #endif

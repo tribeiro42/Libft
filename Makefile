@@ -6,7 +6,7 @@
 #    By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/02 13:51:03 by tribeiro          #+#    #+#              #
-#    Updated: 2017/05/11 20:40:58 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/05/20 17:25:20 by tribeiro         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -45,6 +45,7 @@ str/ft_isdigit.c \
 str/ft_isprint.c \
 str/ft_tolower.c \
 str/ft_toupper.c \
+str/ft_isquote.c \
 \
 conv/ft_atoi.c \
 conv/ft_itoa.c \
