@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_color.c                                  :+:      :+:    :+:   */
+/*   ft_putstr_color_fd.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/18 15:35:09 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/09/19 19:17:17 by tribeiro         ###   ########.fr       */
+/*   Created: 2017/09/19 19:15:55 by tribeiro          #+#    #+#             */
+/*   Updated: 2017/09/19 19:17:12 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_putstr_color(char *str, char *color)
+void		ft_putstr_color_fd(int fd,char *str, char *color)
 {
-	ft_putstr(color);
-    write(1, str, ft_strlen(str));
-    ft_putstr(COLOR_RESET);
+	ft_putstr_fd(color, fd);
+    write(fd, str, ft_strlen(str));
+    ft_putstr_fd(COLOR_RESET, fd);
 }

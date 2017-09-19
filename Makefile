@@ -6,7 +6,7 @@
 #    By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/02 13:51:03 by tribeiro          #+#    #+#              #
-#    Updated: 2017/09/18 15:46:21 by tribeiro         ###   ########.fr        #
+#    Updated: 2017/09/19 19:17:39 by tribeiro         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -90,6 +90,7 @@ print/ft_putbase.c \
 print/ft_puthex.c \
 print/ft_print_binary.c \
 print/ft_putstr_color.c \
+print/ft_putstr_color_fd.c \
 \
 str/ft_strcat.c \
 str/ft_strchr.c \

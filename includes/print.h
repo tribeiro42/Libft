@@ -6,7 +6,7 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:02:37 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/09/18 15:45:50 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/09/19 19:18:06 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr_color(char *s, char *c);
+void				ft_putstr_color_fd(int fd, char *s, char *c);
 void				ft_putendl_list(t_list **list);
 void				ft_putendl_array2d(char ***array);
 void				ft_putnbr(int n);
