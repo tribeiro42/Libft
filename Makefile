@@ -15,7 +15,7 @@
 #################################################
 
 NAME = Libft.a
-CC = clang
+CC = gcc
 FLAGS = -Wall -Wextra -Werror
 SRC_PATH = ./srcs/
 INC_PATH = -I./includes/
