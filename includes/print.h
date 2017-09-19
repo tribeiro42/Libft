@@ -6,13 +6,20 @@
 /*   By: tribeiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 21:02:37 by tribeiro          #+#    #+#             */
-/*   Updated: 2017/01/30 18:44:22 by tribeiro         ###   ########.fr       */
+/*   Updated: 2017/09/18 15:45:50 by tribeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PRINT_H
 # define PRINT_H
 # define HEX "0123456789abcdef"
+# define COLOR_RED     "\x1b[31m"
+# define COLOR_GREEN   "\x1b[32m"
+# define COLOR_YELLOW  "\x1b[33m"
+# define COLOR_BLUE    "\x1b[34m"
+# define COLOR_MAGENTA "\x1b[35m"
+# define COLOR_CYAN    "\x1b[36m"
+# define COLOR_RESET   "\x1b[0m"
 
 void				ft_putchar(char c);
 void				ft_putnchar(char c, int n);
@@ -23,6 +30,7 @@ void				ft_putendl(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
+void				ft_putstr_color(char *s, char *c);
 void				ft_putendl_list(t_list **list);
 void				ft_putendl_array2d(char ***array);
 void				ft_putnbr(int n);
